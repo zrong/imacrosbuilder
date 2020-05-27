@@ -1,3 +1,5 @@
+# 第一种用法
+
 用于将结构化表格转换成 [iMacros](https://imacros.net/) 的宏
 
 imacros 用于 http://www.hbwhrd.org/index.aspx 网站的税务研发加计扣除。
@@ -8,6 +10,11 @@ imacros 用于 http://www.hbwhrd.org/index.aspx 网站的税务研发加计扣�
 2. 按照下面的 CSV 格式创建 CSV，保存为 `Q1.csv/Q2.csv/Q3.csv` ，每个季度一个 CSV 文件；
 3. 运行 convert.py 生成 `Q1.macro/Q2.macro/Q3.macro` ；
 4. iMacros 免费版限制 50 行宏，因此需要手动分割文件，修改 convert.py 即可。
+
+
+# 第二种用法
+
+使用 Chrome 的 Tampermonkey 插件，加入 hbwhrd-UpdateProject.user.js 即可在界面中增加一个TextArea，将 CSV 内容粘贴其中即可（不用包含 CSV TITLE）。
 
 
 ``` CSV
